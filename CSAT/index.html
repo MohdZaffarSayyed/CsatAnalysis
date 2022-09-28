@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script type="text/javascript" src="csatAnalysis.js "></script>
+    <link rel="stylesheet" href="csatAnalysis.css">
+    <title>CSAT ANALYSIS</title>
+</head>
+
+<body>
+    <div class="box">
+        <h2 class="header">CSAT ANALYSIS</h2>
+        <hr color="black">
+        <form method="post" action="">
+            <div class="input1">
+                <label for="cscore">Your Current Score: </label>
+                <input type="number" id="cscore" placeholder="0.00" required min="1" max="5" step="0.01">
+                <br><br>
+                <label for="nratings">Your total number of ratings: </label>
+                <input type="number" id="nratings" placeholder="0" required min="1" max="500">
+            </div>
+
+
+            <div class="input2 ">
+                <label for="rscore">Your Required Score: </label>
+                <input type="number" id="rscore" placeholder="0.00" required min="1" max="5" step="0.01">
+            </div>
+            <br><br><br>
+            <div class="input2 ">
+                <label for="DaysWorking">Workig Days Left: </label>
+                <input type="number" id="DaysWorking" placeholder="1-22" required min="1" max=22 ">
+            </div>
+            <div class="buttons ">
+                <button type="reset " class="Clear ">CLEAR</button>
+                <button type="button " id="Calculate " onclick="calculate() ">Total 5 Need</button>
+                <button type="button " id="Calculate2 " onclick="calculate2() ">Daily 5 Need</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
